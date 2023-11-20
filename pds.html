@@ -1,70 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Cedrick Chu">
-  <title>Personal Data Sheet</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <title>Bootstrap Table</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cedrick Chu">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Personal Data Sheet by Cedrick Chu</title>
 </head>
 <body>
     <div class="container container-fluid mx-auto">
         <table class="table table-bordered ">
             <thead class="font-sans text-black">
                 <tr>
-                    <th colspan="13">CS Form No. 212</th>
+                    <th colspan="16">CS Form No. 212</th>
                 </tr>
                 <tr>
-                    <th colspan="13">Revised 2017</th>
+                    <th colspan="16">Revised 2017</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td colspan="13" class="text-center"><h1>PERSONAL DATA SHEET</h1></td>
+                    <td colspan="16">
+                        <h1  class="text-center">PERSONAL DATA SHEET</h1>
+                        <small class="small-title">WARNING: Any misrepresentation made in the Personal Data Sheet and the Work Experience Sheet shall cause the filing of administrative/criminal case/s against the person concerned.</small>
+                        <br><br>
+                        <small class="small-title">READ THE ATTACHED GUIDE TO FILLING OUT THE PERSONAL DATA SHEET (PDS) BEFORE ACCOMPLISHING THE PDS FORM.</small><br>
+                        <small>Print legibly. Tick appropriate boxes (     ) and use separate sheet if necessary. Indicate N/A if not applicable.  DO NOT ABBREVIATE.</small>
+                        <small id="csid-gray">1. CS ID NO </small>
+                        <small id="fillup">(Do not fill up. For CSC use only)</small>
+                    </td>
                 </tr>
                 <tr id='section'>
-                    <td colspan="13">
+                    <td colspan="16">
                         I. PERSONAL INFORMATION
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">FIRS TNAME</td>
-                    <td colspan="8">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="N/A">
+                    <td colspan="4">SURNAME</td>
+                    <td colspan="12">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Dela Cruz">
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">FIRST NAME</td>
-                        <td colspan="8">
+                    <td colspan="4">FIRST NAME</td>
+                        <td colspan="9">
                             <input type="text" class="form-control" id="name" name="name" placeholder="Juan">
                         </td>
-                    <td rowspan="3" colspan="3">
-                        <div >NAME EXTENSION (JR., SR)</div>
+                    <td rowspan="2" colspan="3">
+                        <div >NAME EXTENSION (JR., SR)
                         <input type="text" class="form-control" id="nameextension" name="nameextension" placeholder="N/A">
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">MIDDLE NAME</td>
-                    <td colspan="8">
+                    <td colspan="4">MIDDLE NAME</td>
+                    <td colspan="9">
                         <input type="text" class="form-control" id="middlename" name="middlename" placeholder="N/A">
                     </td>
                 </tr>
                 <tr>
+                    <td colspan="4">
+                        3. DATE OF BIRTH
+                        (mm/dd/yyyy)
+                    </td>
                     <td colspan="3">
-                        <div>3. DATE OF BIRTH</div>
-                        <div>(mm/dd/yyyy)</div>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
-                    <td colspan="2">
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
-                    </td>
-                    <td rowspan="3" colspan="3" id="center">
+                    <td rowspan="3" colspan="4" id="gray">
                         16. CITIZENSHIP<br>
                         if holder of dual citizenship,<br>
                         please indicate the country
                     </td>
-                    <td colspan="4">
+                    <td colspan="5">
                         <div class="text-center">
                             <select class="form-control" name="citizenship" id="citizenship">
                             <option value="filipino">--SELECT--</option>
@@ -73,127 +80,89 @@
                             <option value="By Birth">By Birth</option>
                             <option value="By Naturalization">By Naturalization</option>
                             </select>
-                        </div>
+                        </div> 
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        <div class="flex-row">
-                        <div>4. PLACE OF BIRTH</div>
-                        </div>
+                    <td colspan="4">
+                        4. PLACE OF BIRTH
                     </td>
-                    <td colspan="2">
+                    <td colspan="3">
                         <input type="text" class="form-control" id="placeofbirth" name="placeofbirth" placeholder="">
                     </td>
                     <td colspan="5">
-                        <div>
-                            Pls. indicate country:
-                        </div>
+                        Pls. indicate country:
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        <div class="flex-row">
-                            <div>5. SEX</div>
-                        </div>
+                    <td colspan="4">
+                        5. SEX
                     </td>
-                    <td colspan="2">
-                        <div>
-                            <select class="form-control" name="sex" id="sex">
+                    <td colspan="3">
+                        <select class="form-control" name="sex" id="sex">
                             <option value="Male">--SELECT--</option>
                             <option value="Male">MALE</option>
                             <option value="Female">FEMALE</option>
-                            </select>
-                        </div>
+                        </select>     
                     </td>
                     <td colspan="5">
-                        <div class="flex">
-                            <input type="text" class="form-control" id="details" name="details" placeholder="">
-                        </div>
+                        <input type="text" class="form-control" id="details" name="details" placeholder="">
                     </td>
                 </tr>
                 <tr>
+                    <td rowspan="2" colspan="4">
+                        6. CIVIL STATUS
+                    </td>
                     <td rowspan="2" colspan="3">
-                        <div>
-                            <div>6. CIVIL STATUS</div>
-                        </div>
+                        <select class="form-control" name="civilstatus" id="civilstatus">
+                            <option value="civilstatus">--SELECT--</option>
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
+                            <option value="widowed">Widowed</option>
+                            <option value="separated">Separated</option>
+                            <option value="others">Other/s</option>
+                        </select>
                     </td>
-                    <td rowspan="2" colspan="2">
-                        <div>
-                            <div class="flex mr-6">
-                            <select class="form-control" name="civilstatus" id="civilstatus">
-                                <option value="civilstatus">--SELECT--</option>
-                                <option value="single">Single</option>
-                                <option value="married">Married</option>
-                                <option value="widowed">Widowed</option>
-                                <option value="separated">Separated</option>
-                                <option value="others">Other/s</option>
-                            </select>
-                            </div>
-                        </div>
-                    </td>
-                    <td rowspan="3" colspan="2" id="center">
-                        <div>
-                            <div>17. RESIDENTIAL ADDRESS</div>
-                        </div>
+                    <td rowspan="3" colspan="3" id="gray">
+                        17. RESIDENTIAL ADDRESS
                     </td>
                         <td colspan="3">
-                            <div>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="HOUSE/BLOCK/LOT NO.">
-                            </div>
+                            <input type="text" class="form-control" id="address" name="address" placeholder="HOUSE/BLOCK/LOT NO.">    
                         </td>
-                    <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="STREET">
-                        </div>
+                    <td colspan="3">                        
+                        <input type="text" class="form-control" id="address" name="address" placeholder="STREET">
                     </td>
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="height" name="height" placeholder="SUBDIVISION/VILLAGE">
-                        </div>
+                        <input type="text" class="form-control" id="height" name="height" placeholder="SUBDIVISION/VILLAGE">     
                     </td>
                     <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="BARANGAY">
-                        </div>
+                        <input type="text" class="form-control" id="address" name="address" placeholder="BARANGAY">
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        <div>
+                    <td colspan="4">
                         7. HEIGHT
-                        </div>
-                    </td>
-                    <td colspan="2">
-                        <div>
-                            <input type="text" class="form-control" id="height" name="height" placeholder="(m)">
-                        </div>
                     </td>
                     <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="House/Block/Lot No.">
-                        </div>
+                        <input type="text" class="form-control" id="height" name="height" placeholder="(m)">
                     </td>
                     <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="House/Block/Lot No.">
-                        </div>
+                        <input type="text" class="form-control" id="address" name="address" placeholder="CITY/MUNICIPALITY">
+                    </td>
+                    <td colspan="3">
+                        <input type="text" class="form-control" id="address" name="address" placeholder="PROVINCE">
                     </td>
                 </tr>
                 <tr>
+                    <td colspan="4">
+                        8. WEIGHT
+                    </td>
                     <td colspan="3">
-                        <div>
-                            8. WEIGHT
-                        </div>
+                        <input type="text" class="form-control" id="weight" name="weight" placeholder="(kg)">
                     </td>
-                    <td colspan="2">
-                        <div>
-                            <input type="text" class="form-control" id="weight" name="weight" placeholder="(kg)">
-                        </div>
-                    </td>
-                    <td colspan="2" id="center"> 
+                    <td colspan="3" id="gray"> 
                         <div class="text-center">
                             ZIP CODE
                         </div>
@@ -205,200 +174,136 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        <div>
+                    <td colspan="4">
                         9. BLOOD TYPE
-                        </div>
-                    </td>
-                    <td colspan="2">
-                        <div>
-                            <select name="bloodtype" id="bloodtype">
-                                <option value="bloodtype">--SELECT--</option>
-                                <option value="A+">A+</option>
-                                <option value="A-">A-</option>
-                                <option value="B+">B+</option>
-                                <option value="B-">B-</Sption>
-                                <option value="AB+">AB+</option>
-                                <option value="AB-">AB-</option>
-                            </select>
-                        </div>
-                    </td>
-                    <td rowspan="3" colspan="2" id="center">
-                        <div>
-                            18. PERMANENT ADDRESS
-                        </div>
                     </td>
                     <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="HOUSE/BLOCK/LOT NO.">
-                        </div>
+                        <select name="bloodtype" id="bloodtype">
+                            <option value="bloodtype">--SELECT--</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</Sption>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                    </td>
+                    <td rowspan="3" colspan="3" id="gray">
+                        18. PERMANENT ADDRESS
                     </td>
                     <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="STREET">
-                        </div>
+                        <input type="text" class="form-control" id="address" name="address" placeholder="HOUSE/BLOCK/LOT NO.">
+                    </td>
+                    <td colspan="3">
+                        <input type="text" class="form-control" id="address" name="address" placeholder="STREET">
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        <div>
+                    <td colspan="4">
                         10. GSIS ID NO
-                        </div>
-                    </td>
-                    <td colspan="2">
-                        <div>
-                            <input type="text" class="form-control" id="gsis" name="gsis">
-                        </div>
                     </td>
                     <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="SUBDIVISION/VILLAGE">
-                        </div>
+                        <input type="text" class="form-control" id="gsis" name="gsis">
                     </td>
                     <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="BARANGAY">
-                        </div>
+                        <input type="text" class="form-control" id="address" name="address" placeholder="SUBDIVISION/VILLAGE">
+                    </td>
+                    <td colspan="3">
+                        <input type="text" class="form-control" id="address" name="address" placeholder="BARANGAY">
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        <div>
+                    <td colspan="4">
                         11. PAG-IBIG ID NO.
-                        </div>
-                    </td>
-                    <td colspan="2">
-                        <div>
-                            <input type="text" class="form-control" id="pagibig" name="pagibig">
-                        </div>
                     </td>
                     <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="CITY/MUNICIPALITY">
-                        </div>
+                        <input type="text" class="form-control" id="pagibig" name="pagibig">
                     </td>
                     <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="PROVINCE">
-                        </div>
+                        <input type="text" class="form-control" id="address" name="address" placeholder="CITY/MUNICIPALITY">
+                    </td>
+                    <td colspan="3">
+                        <input type="text" class="form-control" id="address" name="address" placeholder="PROVINCE">
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        <div>
+                    <td colspan="4">
                         12. PHIL HEALTH ID NO.
-                        </div>
                     </td>
-                    <td colspan="2">
-                        <div>
-                            <input type="text" class="form-control" id="ohilhealth" name="ohilhealth">
-                        </div>
+                    <td colspan="3">
+                        <input type="text" class="form-control" id="ohilhealth" name="ohilhealth">
                     </td>
-                    <td colspan="2" id="center">
-                        <div>
+                    <td colspan="3" id="gray">
                         ZIP CODE
-                        </div>
                     </td>
                     <td colspan="6">
-                        <div>
-                            <input type="text" class="form-control" id="zip" name="zip">
-                        </div>
+                        <input type="text" class="form-control" id="zip" name="zip">
                     </td>
                 </tr>
                 <tr>
+                    <td colspan="4">
+                        13. SSS ID NO.
+                    </td>
                     <td colspan="3">
-                        <div>
-                            13. SSS ID NO.
-                        </div>
+                        <input type="text" class="form-control" id="SSS" name="SSS" placeholder="N/A">
                     </td>
-                    <td colspan="2">
-                        <div>
-                            <input type="text" class="form-control" id="SSS" name="SSS" placeholder="N/A">
-                        </div>
-                    </td>
-                    <td colspan="2" id="center">
-                        <div>
-                            19. TELEPHONE NUMBER
-                        </div>
+                    <td colspan="3" id="gray">
+                        19. TELEPHONE NUMBER
                     </td>
                     <td colspan="6">
-                        <div>
-                            <input type="text" class="form-control" id="telno" name="telno" placeholder="N/A">
-                        </div>
+                        <input type="text" class="form-control" id="telno" name="telno" placeholder="N/A">
                     </td>
                 </tr>
                 <tr>
+                    <td colspan="4">
+                        14. TIN
+                    </td>
                     <td colspan="3">
-                        <div>
-                            14. TIN
-                        </div>
+                        <input type="text" class="form-control" id="tin" name="tin" placeholder="N/A">
+                        
                     </td>
-                
-                    <td colspan="2">
-                        <div>
-                            <input type="text" class="form-control" id="tin" name="tin" placeholder="N/A">
-                        </div>
-                    </td>
-                    <td colspan="2" id="center">
-                        <div>
-                            20. MOBILE NUMBER
-                        </div>
+                    <td colspan="3" id="gray">
+                        20. MOBILE NUMBER
                     </td>
                     <td colspan="6">
-                        <div>
-                            <input type="text" class="form-control" id="mobnum" name="mobnum" placeholder="N/A">
-                        </div>
+                        <input type="text" class="form-control" id="mobnum" name="mobnum" placeholder="N/A">
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        <div>
-                            15. AGENCY EMPLOYEE NUMBER
-                        </div>
+                    <td colspan="4">
+                        15. AGENCY EMPLOYEE NUMBER
                     </td>
-                    <td colspan="2">
-                        <div>
+                    <td colspan="3">
                             <input type="text" class="form-control" id="employeenumber" name="employeenumber" placeholder="N/A">
-                        </div>
                     </td>
-                    <td colspan="2" id="center">
-                        <div>
-                            21. EMAIL ADDRESS(if any)
-                        </div>
+                    <td colspan="3" id="gray">
+                        21. EMAIL ADDRESS(if any)
                     </td>
                     <td colspan="6">
-                        <div>
-                            <input type="text" class="form-control" id="email" name="email" placeholder="N/A">
-                        </div>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="N/A">
                     </td>
                 </tr>
                 <tr id='section'>
-                    <td colspan="13">
+                    <td colspan="16">
                         II. FAMILY BACKGROUND
                     </td>
                     <tr>
-                        <td colspan="3">22. SPOUSE's SURNAME</td>
-                        <td colspan="4">
+                        <td colspan="4">22. SPOUSE's SURNAME</td>
+                        <td colspan="5">
                             <input type="text" class="form-control" id="name" name="name" placeholder="">
                         </td>
                         <td colspan="4">
-                            <div>
-                                23. NAME OF CHILDREN(write full name list all)
-                            </div>
+                            23. NAME OF CHILDREN(write full name list all)
                         </td>
-                        <td colspan="2">
-                            <div>
-                                DATE OF BIRTH(mm/dd/yyy)
-                            </div>
+                        <td colspan="3">
+                            DATE OF BIRTH(mm/dd/yyy)
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3">
-                            <div>
-                                FIRST NAME
-                            </div>
+                        <td colspan="4">
+                            FIRST NAME
                         </td>
-                        <td colspan="2">
+                        <td colspan="3">
                             <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Maria">
                         </td>
                         <td colspan="2">
@@ -407,113 +312,100 @@
                         <td colspan="4">
                             <input type="text" class="form-control" id="name" name="name" placeholder="JUAN DELA CRUZ">
                         </td>
-                        <td colspan="2">
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="3">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3">
-                            <div>
-                                MIDDLE NAME
-                            </div>
-                        </td>
                         <td colspan="4">
+                            MIDDLE NAME
+                        </td>
+                        <td colspan="5">
                             <input type="text" class="form-control" id="name" name="name" placeholder="">
                         </td>
                         <td colspan="4">
                             <input type="text" class="form-control" id="name" name="name" placeholder="JUAN DELA CRUZ">
                         </td>
-                        <td colspan="2">
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="3">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3">
-                            <div>
-                                OCUPATION
-                            </div>
-                        </td>
                         <td colspan="4">
+                            OCUPATION
+                        </td>
+                        <td colspan="5">
                             <input type="text" class="form-control" id="name" name="name" placeholder="">
                         </td>
 
                         <td colspan="4">
                             <input type="text" class="form-control" id="name" name="name" placeholder=" JUAN DELA CRUZ">
                         </td>
-                        <td colspan="2">
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="3">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3">
-                            <div>
-                                EMPLOYER/BUSINESS NAME
-                            </div>
-                        </td>
                         <td colspan="4">
+                            EMPLOYER/BUSINESS NAME
+                        </td>
+                        <td colspan="5">
                             <input type="text" class="form-control" id="name" name="name" placeholder="">
                         </td>
 
                         <td colspan="4">
                             <input type="text" class="form-control" id="name" name="name" placeholder="JUAN DELA CRUZ">
                         </td>
-                        <td colspan="2">
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="3">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3">
-                            <div>
-                                BUSINESS ADDRESS
-                            </div>
-                        </td>
                         <td colspan="4">
+                            BUSINESS ADDRESS
+                        </td>
+                        <td colspan="5">
                             <input type="text" class="form-control" id="name" name="name" placeholder="">
                         </td>
 
                         <td colspan="4">
                             <input type="text" class="form-control" id="name" name="name" placeholder="JUAN DELA CRUZ">
                         </td>
-                        <td colspan="2">
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="3">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3">
-                            <div>
-                                TELEPHONE NUMBER
-                            </div>
-                        </td>
                         <td colspan="4">
+                            TELEPHONE NUMBER
+                        </td>
+                        <td colspan="5">
                             <input type="text" class="form-control" id="name" name="name" placeholder="">
                         </td>
-
                         <td colspan="4">
                             <input type="text" class="form-control" id="name" name="name" placeholder="JUAN DELA CRUZ">
                         </td>
-                        <td colspan="2">
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="3">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3">24. FATHER'S SURNAME</td>
-                        <td colspan="4">
+                        <td colspan="4">24. FATHER'S SURNAME</td>
+                        <td colspan="5">
                             <input type="text" class="form-control" id="name" name="name" placeholder="">
                         </td>
                         <td colspan="4">
                             <input type="text" class="form-control" id="name" name="name" placeholder="JUAN">
                         </td>
-                        <td colspan="2">
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="3">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3">
-                            <div>
-                                FIRST NAME
-                            </div>
+                        <td colspan="4">
+                            FIRST NAME
                         </td>
-                        <td colspan="2">
+                        <td colspan="3">
                             <input type="text" class="form-control" id="name" name="name" placeholder="JUAN">
                         </td>
                         <td colspan="2">
@@ -522,64 +414,55 @@
                         <td colspan="4">
                             <input type="text" class="form-control" id="name" name="name" placeholder="JUAN DELA CRUZ">
                         </td>
-                        <td colspan="2">
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="3">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3">
-                            <div>
-                                MIDDLE NAME
-                            </div>
-                        </td>
                         <td colspan="4">
+                            MIDDLE NAME
+                        </td>
+                        <td colspan="5">
                             <input type="text" class="form-control" id="name" name="name" placeholder="">
                         </td>
                         <td colspan="4">
                             <input type="text" class="form-control" id="name" name="name" placeholder="JUAN DELA CRUZ">
                         </td>
-                        <td colspan="2">
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="3">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3">25. MOTHER'S MAIDEN NAME</td>
-                        <td colspan="4">
+                        <td colspan="4">25. MOTHER'S MAIDEN NAME</td>
+                        <td colspan="5">
                             <input type="text" class="form-control" id="name" name="name" placeholder="">
                         </td>
                         <td colspan="4">
                             <input type="text" class="form-control" id="name" name="name" placeholder="JUAN">
                         </td>
-                        <td colspan="2">
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="3">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3">
-                            <div>
-                                SURNAME
-                            </div>
+                        <td colspan="4">
+                            SURNAME
                         </td>
-                        <td colspan="2">
+                        <td colspan="5">
                             <input type="text" class="form-control" id="name" name="name" placeholder="JUAN">
-                        </td>
-                        <td colspan="2">
-                            <input type="text" class="form-control" id="ext" name="ext" placeholder="name ext.">
                         </td>
                         <td colspan="4">
                             <input type="text" class="form-control" id="name" name="name" placeholder="JUAN DELA CRUZ">
                         </td>
-                        <td colspan="2">
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="3">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3">
-                            <div>
-                                FIRST NAME
-                            </div>
+                        <td colspan="4">
+                            FIRST NAME
                         </td>
-                        <td colspan="2">
+                        <td colspan="3">
                             <input type="text" class="form-control" id="name" name="name" placeholder="JUAN">
                         </td>
                         <td colspan="2">
@@ -588,312 +471,233 @@
                         <td colspan="4">
                             <input type="text" class="form-control" id="name" name="name" placeholder="JUAN DELA CRUZ">
                         </td>
-                        <td colspan="2">
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="3">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3">
-                            <div>
-                                MIDDLE NAME
-                            </div>
+                        <td colspan="4">
+                            MIDDLE NAME
                         </td>
                         <td colspan="4">
                             <input type="text" class="form-control" id="name" name="name" placeholder="">
                         </td>
-                        <td colspan="4">
-                           <p style="color: red; font-size: 12px;">(CONTINUE ON SEPARATE SHEET IF NECESSARY)</p>
-                        </td>
-                        <td colspan="2">
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                            <td colspan="5" style="background-color: aqua;">
+                                <p style="color: red; font-size: 12px;" class="text-center">(CONTINUE ON SEPARATE SHEET IF NECESSARY)</p>
+                             </td>
+                        <td colspan="3">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
-                    
                 </tr>
                 <tr id='section'>
-                    <td colspan="13">
+                    <td colspan="16">
                         III. EDUCATIONAL BACKGROUND
                     </td>
                 </tr>
                 <tr>    
-                    <td rowspan="2" colspan="2" id="center">
-                        <div>
-                            LEVEL
-                        </div>
+                    <td rowspan="2" colspan="2" id="gray">
+                        LEVEL
                     </td>
-                    <td rowspan="2" colspan="3" id="center">
-                        <div>
-                            NAME OF SCHOOL
-                        </div>
+                    <td rowspan="2" colspan="3" id="gray">
+                        NAME OF SCHOOL
                     </td>
-                    <td rowspan="2" colspan="3" id="center">
-                        <div>
-                            EDUCATIONAL
-                        </div>
+                    <td rowspan="2" colspan="3" id="gray">
+                        EDUCATIONAL
                     </td>
-                    <td colspan="2" id="center">
-                        <div>
-                            PERIOD OF ATTENDANCE
-                        </div>
+                    <td colspan="2" id="gray">
+                        PERIOD OF ATTENDANCE
                     </td>
-                    <td rowspan="2" id="center">
-                        <div>
-                            <p>HIGHEST LEVEl/</p>
-                            <p>UNIT EARNED(if not graduated)</p>
-                        </div>
+                    <td rowspan="2" id="gray"  colspan="2">
+                        <p>HIGHEST LEVEl/</p>
+                        <p>UNIT EARNED(if not graduated)</p>
                     </td>
-                    <td rowspan="2" id="center">
-                        <div>
-                            YEAR GRADUATED
-                        </div>
+                    <td rowspan="2" id="gray" colspan="2">
+                        YEAR GRADUATED                    
                     </td>
-                    <td rowspan="2" id="center">
-                        <div>
-                            <p>SCHOLARSHIP/</p>
-                            <p>ACADEMIC HONORs</p>
-                            <p>RECEIVED</p>
-                        </div>
+                    <td rowspan="2" colspan="2" id="gray">                     
+                        <p>SCHOLARSHIP/</p>
+                        <p>ACADEMIC HONORs</p>
+                        <p>RECEIVED</p>       
                     </td>
-                    <tr id="center">
+                    <tr id="gray">
                         <td >
-                            <div>
-                                FROM
-                            </div>
+                            FROM
                         </td>
-                        <td>
-                            <div>
-                                TO
-                            </div>
+                        <td> 
+                            TO                           
                         </td>
                     </tr>
                 </tr>
                 <tr>
-                    <td id="center" colspan="2">
-                        <div>
-                            ELEMENTARY
-                        </div>
+                    <td id="gray" colspan="2">
+                        ELEMENTARY
                     </td>
                     <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">                      
                     </td>
-                    <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="3">                       
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">                    
                     </td>
                     <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
                     <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
-                    <td>
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                     </td>
-                    <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
-                    <td>
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" id="center">
-                        <div>
-                            SECONDARY
-                        </div>
+                    <td id="gray" colspan="2">
+                        SECONDARY
                     </td>
                     <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">                      
                     </td>
-                    <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="3">                       
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">                    
                     </td>
                     <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
                     <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
-                    <td>
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                     </td>
-                    <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
-                    <td>
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" id="center">
-                        <div>
-                            VOCATIONAL
-                        </div>
+                    <td id="gray" colspan="2">
+                        VOCATIONAL
                     </td>
                     <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">                      
                     </td>
-                    <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="3">                       
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">                    
                     </td>
                     <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
                     <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
-                    <td>
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                     </td>
-                    <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
-                    <td>
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" id="center">
-                        <div>
-                            TERTIARY/ TRADE COURSE
-                        </div>
+                    <td id="gray" colspan="2">
+                        TERTIARY
                     </td>
                     <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">                      
                     </td>
-                    <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="3">                       
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">                    
                     </td>
                     <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
                     <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
-                    <td>
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                     </td>
-                    <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
-                    <td>
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                     </td>
                 </tr>
                 <tr>
-                    <td rowspan="2" colspan="2" id="center">
-                        <div>
-                            GRADUATE STUDIES
-                        </div>
+                    <td id="gray" colspan="2" rowspan="2">
+                        GRADUATE STUDIES
                     </td>
                     <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">                      
                     </td>
-                    <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="3">                       
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">                    
                     </td>
                     <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
                     <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
-                    <td>
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                     </td>
-                    <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
-                    <td>
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                     </td>
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                     </td>
-                    <td colspan="3">
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="3">                  
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                     </td>
                     <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
                     <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
-                    <td>
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                     </td>
-                    <td>
-                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
-                    <td>
-                        <div>
-                            <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
-                        </div>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="13" style="background-color: aqua;">
+                    <td colspan="16" style="background-color: aqua;">
                         <p style="color: red; font-size: 12px;" class="text-center">(CONTINUE ON SEPARATE SHEET IF NECESSARY)</p>
                      </td>
                 </tr>
                 <tr>
-                    <td colspan="3" id="center">
+                    <td colspan="3" id="gray">
                         <h4>
                             SIGNATURE
                         </h4>
                     </td>
-                    <td colspan="5">
-                        <div>
-                        </div>
+                    <td colspan="6">
+                        
+                        
                     </td>
-                    <td id="center" colspan="2">
+                    <td id="gray" colspan="4">
                         <h4>
                             DATE
                         </h4>
@@ -903,46 +707,38 @@
                     </td>
                 </tr>
                 <tr id='section'>
-                    <td colspan="13">
+                    <td colspan="16">
                         IV. CIVIL SERVICE ELIGIBILITY
                     </td>
                 </tr>
                 <tr>    
-                    <td rowspan="2" colspan="4" id="center">
-                        <div>
+                    <td rowspan="2" colspan="4" id="gray">
+                        
                             RVICE/RA 1080
-                        </div>
+                        
                     </td>
-                    <td rowspan="2"  id="center" colspan="2">
-                        <div>
+                    <td rowspan="2"  id="gray" colspan="2">
+                        
                             RATING
-                        </div>
+                        
                     </td>
-                    <td rowspan="2" id="center">
-                        <div>
+                    <td rowspan="2" colspan="2" id="gray">
+                        
                             DATE OF EXAMINATION
-                        </div>
+                        
                     </td>
-                    <td colspan="4" id="center" rowspan="2">
-                        <div>
-                            PLACE OF EXAMINATION
-                        </div>
+                    <td colspan="4" id="gray" rowspan="2">
+                        PLACE OF EXAMINATION
                     </td>
-                    <td id="center" colspan="2">
-                        <div>
-                            LICENSE
-                        </div>
+                    <td id="gray" colspan="4">
+                        LICENSE
                     </td>
-                    <tr id="center">
-                        <td >
-                            <div>
-                               NUMBER
-                            </div>
+                    <tr id="gray">
+                        <td colspan="2">
+                            NUMBER
                         </td>
-                        <td>
-                            <div>
-                               DATE OF VALIDITY
-                            </div>
+                        <td colspan="2">
+                            DATE OF VALIDITY
                         </td>
                     </tr>
                     <tr>
@@ -952,17 +748,17 @@
                         <td colspan="2">
                             <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                         </td>
-                        <td>
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="2">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                         <td colspan="4">
                             <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                         </td>
-                        <td>
+                        <td colspan="2">
                             <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                         </td>
-                        <td>
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="2">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
                     <tr>
@@ -972,17 +768,17 @@
                         <td colspan="2">
                             <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                         </td>
-                        <td>
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="2">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                         <td colspan="4">
                             <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                         </td>
-                        <td>
+                        <td colspan="2">
                             <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                         </td>
-                        <td>
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="2">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
                     <tr>
@@ -992,17 +788,17 @@
                         <td colspan="2">
                             <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                         </td>
-                        <td>
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="2">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                         <td colspan="4">
                             <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                         </td>
-                        <td>
+                        <td colspan="2">
                             <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                         </td>
-                        <td>
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="2">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
                     <tr>
@@ -1012,92 +808,87 @@
                         <td colspan="2">
                             <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                         </td>
-                        <td>
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="2">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                         <td colspan="4">
                             <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                         </td>
-                        <td>
+                        <td colspan="2">
                             <input type="text" class="form-control" id="ELEMENTARY" name="ELEMENTARY">
                         </td>
-                        <td>
-                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31"/>
+                        <td colspan="2">
+                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="13" style="background-color: aqua;">
+                        <td colspan="16" style="background-color: aqua;">
                             <p style="color: red; font-size: 12px;" class="text-center">(CONTINUE ON SEPARATE SHEET IF NECESSARY)</p>
                          </td>
                     </tr>
                 </tr>
                 <tr id='section'>
-                    <td colspan="13">
+                    <td colspan="16">
                         V. WORK EXPERIENCE
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" id="center">
+                    <td colspan="2" id="gray">
                         INCLUSIVE DATES (mm/dd/yyyy)
                     </td>
-                    <td colspan="3" rowspan="2" id="center">
+                    <td colspan="4" rowspan="2" id="gray">
                         POSITION TITLE
                     </td>
-                    <td colspan="3" rowspan="2" id="center">
+                    <td colspan="3" rowspan="2" id="gray">
                         DEPARTMENT/AGENT/COMPANY<br>
                         <p>(Write in full Do not abbreviate)</p>
                     </td>
-                    <td  rowspan="2" id="center">
+                    <td  rowspan="2" id="gray" colspan="2">
                         MONTHLY SALARY
                     </td>
-                    <td  rowspan="2" id="center">
+                    <td  rowspan="2" id="gray" colspan="2">
                         SALARY/JOB/PAY GRADE
                     </td>
-                    <td  rowspan="2" id="center">
+                    <td  rowspan="2" id="gray" colspan="2">
                         STATUS OF APPOITMENT
                     </td>
-                    <td  rowspan="2" id="center">
-                        SALARY/JOB/PAY GRADE
-                    </td>
-                    <td  rowspan="2" id="center">
+                    
+                    <td  rowspan="2" id="gray">
                         Y/N
                     </td>
                 </tr>
                 <tr>
-                    <td id="center">
+                    <td id="gray">
                         From
                     </td>
-                    <td id="center">
+                    <td id="gray">
                         To
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" class="form-control" id="name" name="name">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
                     <td>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="4">
                         <input type="text" class="form-control" id="name" name="name">
                     </td>
                     <td colspan="3">
                         <input type="text" class="form-control" id="name" name="name">
                     </td>
-                    <td colspan="3">
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
                         <input type="text" class="form-control" id="name" name="name">
                     </td>
                     <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <div>
+                        
                             <label>
                               <input type="radio" name="choice-radio">
                               Yes
@@ -1106,36 +897,32 @@
                               <input type="radio" name="choice-radio">
                               No
                             </label>
-                          </div>
                     </td>          
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" class="form-control" id="name" name="name">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
                     <td>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="4">
                         <input type="text" class="form-control" id="name" name="name">
                     </td>
                     <td colspan="3">
                         <input type="text" class="form-control" id="name" name="name">
                     </td>
-                    <td colspan="3">
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
                         <input type="text" class="form-control" id="name" name="name">
                     </td>
                     <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <div>
+                        
                             <label>
                               <input type="radio" name="choice-radio">
                               Yes
@@ -1144,36 +931,32 @@
                               <input type="radio" name="choice-radio">
                               No
                             </label>
-                          </div>
                     </td>          
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" class="form-control" id="name" name="name">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
                     <td>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="4">
                         <input type="text" class="form-control" id="name" name="name">
                     </td>
                     <td colspan="3">
                         <input type="text" class="form-control" id="name" name="name">
                     </td>
-                    <td colspan="3">
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
                         <input type="text" class="form-control" id="name" name="name">
                     </td>
                     <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <div>
+                        
                             <label>
                               <input type="radio" name="choice-radio">
                               Yes
@@ -1182,37 +965,32 @@
                               <input type="radio" name="choice-radio">
                               No
                             </label>
-                          </div>
-                    </td>
-                                   
+                    </td>          
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" class="form-control" id="name" name="name">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
                     <td>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="4">
                         <input type="text" class="form-control" id="name" name="name">
                     </td>
                     <td colspan="3">
                         <input type="text" class="form-control" id="name" name="name">
                     </td>
-                    <td colspan="3">
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
                         <input type="text" class="form-control" id="name" name="name">
                     </td>
                     <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <div>
+                        
                             <label>
                               <input type="radio" name="choice-radio">
                               Yes
@@ -1221,37 +999,32 @@
                               <input type="radio" name="choice-radio">
                               No
                             </label>
-                          </div>
-                    </td>
-                                   
+                    </td>          
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" class="form-control" id="name" name="name">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
                     </td>
                     <td>
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="4">
                         <input type="text" class="form-control" id="name" name="name">
                     </td>
                     <td colspan="3">
                         <input type="text" class="form-control" id="name" name="name">
                     </td>
-                    <td colspan="3">
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
                         <input type="text" class="form-control" id="name" name="name">
                     </td>
                     <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </td>
-                    <td>
-                        <div>
+                        
                             <label>
                               <input type="radio" name="choice-radio">
                               Yes
@@ -1260,10 +1033,484 @@
                               <input type="radio" name="choice-radio">
                               No
                             </label>
-                          </div>
-                    </td>         
+                    </td>          
+                </tr>
+                <tr id='section'>
+                    <td colspan="16">
+                        VI. VOLUNTARY WORK OR INVOLVEMENT IN CIVIC / NON-GOVERNMENTAL / PEOPLE / VOLUNTARY ORGANIZATION
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" rowspan="2" class="text-center"> 29. NAME & ADDRESS OF ORGANIZATION<br>
+                    (Write in full)
+                    </td>
+                    <td colspan="4" class="text-center">(mm/dd/yy)</td>
+                    <td rowspan="2" class="text-center" colspan="2">NUMBER OF HOURS</td>
+                    <td rowspan="2" colspan="5" class="text-center">POSITION / NATURE OF WORK</td>
+                </tr>
+                <tr>
+                    <td colspan="2">FROM</td>
+                    <td colspan="2">TO</td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="5">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="5">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="5">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="5">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="5">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="16" style="background-color: aqua;">
+                        <p style="color: red; font-size: 12px;" class="text-center">(CONTINUE ON SEPARATE SHEET IF NECESSARY)</p>
+                     </td>
+                </tr>
+                <tr id='section'>
+                    <td colspan="16">
+                        VII. LEARNING AND DEVELOPMENT (L&D) INTERVENTIONS/TRAINING PROGRAMS  ATTENDED<br>
+                        <p>(start from most recent L&D/training program and include only the relevant L&D/Training taken for the last fice (5) years of division Chief/Executive/Managerial positions)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" rowspan="2" class="text-center"> 30. TITLE OF LEARNING AND DEVELOPMENT INTERVENTIONS/TRAINING PROGRAMS<br>
+                    (Write in full)
+                    </td>
+                    <td colspan="4" class="text-center">ATTENDACE<br>(mm/dd/yy)</td>
+                    <td rowspan="2" class="text-center" colspan="2">NUMBER OF HOURS</td>
+                    <td rowspan="2" class="text-center" colspan="2">TYPE OF LD<br>
+                    (Managerial/Supervisory/technical/etc)</td>
+                    <td rowspan="2" colspan="3" class="text-center">POSITION / NATURE OF WORK</td>
+                </tr>
+                <tr>
+                    <td colspan="2">FROM</td>
+                    <td colspan="2">TO</td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="3">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="3">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="3">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="2">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                    <td colspan="3">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="11" id="qna">
+                    <p>36. Are you related by consanguinity or affinity to any of the following: </p><br>
+                    <p>a. Within the third degree (for National Government Employees):
+                        appointing authority, recommending authority, chief of office/bureau/department
+                        or person who has immediate supervision over you in the Office, Bureau or Department
+                        where you will be appointed?</p><br>
+                    <p>b. Within fourth degree (for Local Government Employees):
+                        appointing authority or recommending authority where you will be appointed? </p>
+                    </td>
+                    <td colspan="5">
+                    <input type="radio" value="" name="a36"/> YES
+                    <input type="radio" value="" name="a36"/> NO
+                    <br><br>
+                    <p>If YES, give details: <br>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="N/A">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="N/A">
+                    <br>
+                    <input type="radio" value="" name="b36"/> YES
+                    <input type="radio" value="" name="b36"/> NO
+                    <br><br>
+                    <p>If YES, give details: <br>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="N/A">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="N/A">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="11" id="qna">
+                    <p>37.</p><br>
+                    <p>a. Have you ever been formally charged?</p><br><br><br>
+                    <p>b. Have you ever been guilty of any administrative offense? </p>
+                    </td>
+                    <td colspan="5">
+                    <input type="radio" value="" name="a37"/> YES
+                    <input type="radio" value="" name="a37"/> NO
+                    <br><br>
+                    <p>If YES, give details: <br>
+                        ___________________________<br>
+                        ___________________________</p>
+                    <br>
+                    <input type="radio" value="" name="b37"/> YES
+                    <input type="radio" value="" name="b37"/> NO
+                    <br><br>
+                    <p>If YES, give details: <br>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="N/A">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="N/A">
+                </tR>
+                <tr>
+                    <td colspan="11" id="qna">
+                    <p>38.</p><br>
+                    <p>a. Have you ever been convicted of any crime or violation of any law, decree, ordinance or regulation by any court or tribunal?</p><br>
+                    </td>
+                    <td colspan="5">
+                    <input type="radio" value="" name="a38"/> YES
+                    <input type="radio" value="" name="a38"/> NO
+                    <br><br>
+                    <p>If YES, give details: <br>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="N/A">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="N/A">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="11" id="qna">
+                    <p>39.</p><br>
+                    <p>a. Have you ever been separated from the service in any of the following modes:<br>
+                        resignation, retirement, dropped from the rolls, dismissal, termination, and of term, finished contract, AWOL, in the public or private sector?</p>  
+                        <br>
+                    </td>
+                    <td colspan="5">
+                    <input type="radio" value="" name="a39"/> YES
+                    <input type="radio" value="" name="a39"/> NO
+                    <br><br>
+                    <p>If YES, give details: <br>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="N/A">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="N/A">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="11" id="qna">
+                    <p>40.</p><br>
+                    <p>a.Pursuant to: (a) Indigenous People's Act (RA8371)(b) Magna Carta for Disabled Persons (RA 7277); and (c) Solo Parents Welfare m Of
+                        2000 (RA 8972), please answer the following items:</p><br>
+                        <p>a. Indigenous People's Act (RA8371)?</p> <br>
+                        <p>b. Magna Carta for Disabled Persons (RA 7277)?</p><br>
+                        <p>c. Are you a solo parent?</p>
+                    </td>
+                    <td colspan="5">
+                    <input type="radio" value="" name="a40"/> YES
+                    <input type="radio" value="" name="a40"/> NO
+                    <br><br>
+                    <p>If YES, Please specify: </p><input type="text" class="form-control" id="name" name="name" placeholder="N/A"><br>
+                        <p>If YES, Specify ID No:  </p><input type="text" class="form-control" id="name" name="name" placeholder="N/A"><br>
+                        <p>If YES, Specify ID No:  </p><input type="text" class="form-control" id="name" name="name" placeholder="N/A"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="12" id="gray"> 41. REFERENCES <strong>(person not related by consanguinity or affinity to applicant/appointee)</strong></td>
+                    <td rowspan="5" colspan="4">
+                        <div class="card" style="width: 15rem">
+                            <div class="card-body text-center">
+                                <p class="card-text" id="output">ID Picture taken within <br>
+                                    the last 6 months<br>
+                                    3.5 cm. X 4.5 cm.<br>
+                                    (passport size)<br>
+                                    <br>
+                                    with full and handwritten<br>
+                                    name tag and signature ove<br>
+                                    printed name<br>
+                                    <br>
+                                    Computer Generated<br>
+                                    or photocopied picture<br>
+                                    is not accepted
+                                </p>
+                                <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+                                <p><label for="file" class="uploadfile">Upload Image</label></p>
+                                <p><img id="output" width="300"/></p>
+                                <script>
+                                    var loadFile = function(event) {
+                                        var image = document.getElementById('output');
+                                        image.src = URL.createObjectURL(event.target.files[0]);
+                                    };
+                                </script>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" id="gray">NAME</td>
+                    <td colspan="4" id="gray">ADDRESS</td>
+                    <td colspan="3" id="gray">TELEPHONE NUMBER</td>
+                </tr>
+               
+                <tr>
+                    <td colspan="5">
+                        </p><input type="text" class="form-control" id="name" name="name" placeholder="N/A"><br>
+                    </td>
+                    <td colspan="4">
+                        </p><input type="text" class="form-control" id="name" name="name" placeholder="N/A"><br>
+                    </td>
+                    <td colspan="3">
+                        </p><input type="text" class="form-control" id="name" name="name" placeholder="N/A"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        </p><input type="text" class="form-control" id="name" name="name" placeholder="N/A"><br>
+                    </td>
+                    <td colspan="4">
+                        </p><input type="text" class="form-control" id="name" name="name" placeholder="N/A"><br>
+                    </td>
+                    <td colspan="3">
+                        </p><input type="text" class="form-control" id="name" name="name" placeholder="N/A"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        </p><input type="text" class="form-control" id="name" name="name" placeholder="N/A"><br>
+                    </td>
+                    <td colspan="4">
+                        </p><input type="text" class="form-control" id="name" name="name" placeholder="N/A"><br>
+                    </td>
+                    <td colspan="3">
+                        </p><input type="text" class="form-control" id="name" name="name" placeholder="N/A"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="16" id="gray">
+                      <p>43. I declare under oath that the Personal Data Sheet has been accomplished by me, and is a true, correct and complete statement pursuant to the provisions of pertinent laws, rules and regulations of the Republic of the Philippines<br><br>
+                        I also authorize the agency head / authorize representative to verify / validate the contents stated herein. I trust that this information shall remain confidential</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <div class="card" style="width: 30rem">
+                            <div class="card-body text-left">
+                                <table>
+                                    <thead>
+                                        <th id="gray">GOVERNMENTAL ISSUE ID <small>(like passport GSIS,SSS,PRC, Driver's License, etc)</small><br>
+                                        INDICATE ID Number and Date of Issuance</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <label for="gsis"> Governmental Issued ID:</label>
+                                                <input type="text" id="gsis" name="gsis" class="form-control">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="gsis"> ID / License / Passport No.:</label>
+                                                <input type="text" id="gsis" name="gsis" class="form-control">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="gsis"> Date/Place of Issuance: </label>
+                                                <input type="date" id="date" name="trip-start" value="2023-11-14"  min="1990-01-01" max="2026-12-31" class="form-control"/>
+                                            </td>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>   
+                    </td>
+                    <td colspan="8">
+                        <div class="card" style="width: 30rem">
+                            <div class="card-body text-left">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td style="height: 100px;"> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center" id="gray">  Signature (Sign inside the box)</td>
+                                        </tr>
+                                        <tr>
+                                           <td>
+                                            <input type="date" id="date" name="trip-start" value="2023-11-14" min="1990-01-01" max="2026-12-31" class="form-control"/>
+
+                                           </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center" id="gray"> Date accomplished</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 30rem">
+                            <div class="card-body text-left">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td style="height: 200px;"> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center" id="gray"> Right Thumbark</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>     
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="16" class="text-center">
+                        SUBSCRIBE AND SWORN to before me this_____________________,
+                        affiant exhibiting his/her validity issued Government ID as indicated above.
+                        <div class="card" style="width: 30rem" id="item-center">
+                            <div class="card-body text-left">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td style="height: 200px;"> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center" id="gray">Person Administering the Outh</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
             </tbody>
         </table>
-    </div>
+        <p class="text-right">CS FORM 212 (revised 2017), Page 4 of 4</p>
 </html>
